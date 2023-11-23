@@ -1,4 +1,4 @@
-package TDD1234;
+package core;
 
 public interface IStack {
 	int getSize() ;

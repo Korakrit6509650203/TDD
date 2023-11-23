@@ -1,9 +1,9 @@
-package TDD1234;
+package core;
 
 public class Stack implements IStack {
 	Object element ;
 	Object arr[];
-	int capacity = 3 ;
+	int capacity = 3;
 	int top ;
 	Stack(){
 		arr = new Object[capacity];
@@ -31,7 +31,7 @@ public class Stack implements IStack {
 	}
 	public void push(Object elm) {
 		if(!isFull()) {
-			top++;
+			++top;
 			arr[top] = elm;
 		}
 	}
@@ -45,3 +45,4 @@ public class Stack implements IStack {
 		return x;
 	}
 }
+
